@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Виды Кофе - Мир Кофе</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background-color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Шапка и навигация */
+        header {
+            background-color: #1c1c1c;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a.active, nav ul li a:hover {
+            color: #d4a373;
+            font-weight: bold;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 42px;
+            color: #d4a373;
+            margin-bottom: 40px;
+        }
+
+        .coffee-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .coffee-item {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            width: 280px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+
+        .coffee-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .coffee-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .coffee-item p {
+            color: #c4b299;
+            margin: 5px 0;
+        }
+
+        .coffee-item strong {
+            color: #d4a373;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="page1.html" class="active">Виды Кофе</a></li>
+                <li><a href="page2.html">Категории</a></li>
+                <li><a href="page3.html">Обзоры</a></li>
+                <li><a href="page4.html">Новости</a></li>
+                <li><a href="form_task.html">Отзывы</a></li>
+                <li><a href="algorithm_task.html">Алгоритмы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Популярные Виды Кофе</h1>
+            <div class="coffee-list">
+                <div class="coffee-item">
+                    <img src="images/arabica.jpg" alt="Арабика">
+                    <p><strong>Название:</strong> Арабика</p>
+                    <p>Описание: Мягкий, слегка кисловатый вкус с цветочными нотами.</p>
+                </div>
+                <div class="coffee-item">
+                    <img src="images/robusta.jpg" alt="Робуста">
+                    <p><strong>Название:</strong> Робуста</p>
+                    <p>Описание: Более крепкий и насыщенный вкус с нотками горечи.</p>
+                </div>
+                <div class="coffee-item">
+                    <img src="images/liberica.jpg" alt="Либерика">
+                    <p><strong>Название:</strong> Либерика</p>
+                    <p>Описание: Редкий вид с фруктовым вкусом и уникальным ароматом.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мир Кофе. Все права защищены.</p>
+    </footer>
+</body>
+</html>
